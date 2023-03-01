@@ -61,3 +61,17 @@ class Deezer:
         else:
             self.logger.error('Failed to retrieve saved songs from Deezer API')
             raise Exception('Failed to retrieve saved songs from Deezer API')
+        
+    def add_fav_songs(self, tracklist):
+        pass
+        # TODO
+        # function which will take tracklist, find if it is available and return list of IDs in Deezer
+        # also give list of songs that couldnt be find
+
+        get_songs_ids(tracklist)
+
+        # TODO
+        # post to tracklist to reezer something
+
+    def get_songs_ids(self):
+        pass
