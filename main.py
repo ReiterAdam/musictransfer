@@ -1,5 +1,6 @@
 import logging
 from spotify import Spotify
+from deezer import Deezer
 
 def main():
 
@@ -16,8 +17,9 @@ def main():
 
     logger.info('Start')
 
-    sp1 = Spotify()
-    sp1.get_saved_songs()
+    d1 = Deezer()
+    d1.get_saved_songs()
+    
     
 if __name__ == '__main__':
     main()

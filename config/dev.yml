@@ -17,3 +17,8 @@ SPOTIFY:
     GRANT_TYPE: client_credentials
     CONTENT_TYPE: application/x-www-form-urlencoded
 
+DEEZER:
+  BEARER_TOKEN:
+    URL: https://connect.deezer.com/oauth/access_token.php
+    GRANT_TYPE: client_credentials
+    METHOD: POST
