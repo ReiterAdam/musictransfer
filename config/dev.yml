@@ -9,9 +9,6 @@ SPOTIFY:
     GRANT_TYPE: client_credentials
     
   API:
-    # HOST: api.spotify.com 
-    # VERSION: v1
-    # PROTOCOL: https
     URL: https://accounts.spotify.com/api/token
     METHOD: POST
     GRANT_TYPE: client_credentials
