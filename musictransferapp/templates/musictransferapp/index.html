@@ -1,0 +1,35 @@
+{% extends "musictransferapp/layout.html" %}
+{% load static %}
+
+{% block body %}
+  <div class="container my-5">
+    <h1>Transfer Your Music Collection</h1>
+    <p class="lead">Easily transfer your music collection from one platform to another with our simple and efficient tool.</p>
+    <form action="#" method="POST" class="my-4">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="source">Source Platform</label>
+        <select class="form-control" id="source" name="source">
+          <option value="spotify">Spotify</option>
+          <option value="apple-music">Apple Music</option>
+          <option value="tidal">Tidal</option>
+          <option value="google-play">Google Play</option>
+          <option value="deezer">Deezer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="destination">Destination Platform</label>
+        <select class="form-control" id="destination" name="destination">
+          <option value="spotify">Spotify</option>
+          <option value="apple-music">Apple Music</option>
+          <option value="tidal">Tidal</option>
+          <option value="google-play">Google Play</option>
+          <option value="deezer">Deezer</option>
+        </select>
+      </div>
+      <button type="submit" id="confirm" class="btn btn-primary">Transfer Music</button>
+    </form>
+  </div>
+
+
+{% endblock %}
